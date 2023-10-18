@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registeration Form</title>
+  </head>
+  <body>
+    <div>
+      <center><h1>Employee Registeration Form</h1></center>
+      <hr />
+      <label for="firstname">First Name:</label>
+      <input
+        type="text"
+        name="firstname"
+        placeholder="First Name"
+        size="15"
+        required
+      />
+      <br /><br />
+      <label for="lastname">Last Name:</label>
+      <input
+        type="text"
+        name="lastname"
+        placeholder="Last Name"
+        size="15"
+        required
+      />
+      <br /><br />
+    </div>
+    <div>
+      <label for="department">Department:</label>
+      <select name="department" id="department" required>
+        <option value="Branch">Department</option>
+        <option value="CS">Computer Science</option>
+        <option value="IS">Information Science</option>
+        <option value="EC">Electronics Communication</option>
+        <option value="CV">Civil Engineering</option>
+        <option value="ME">Mechanical Engineering</option>
+      </select>
+      <br /><br />
+      <label for="gender">Gender:</label> <br />
+      <input type="radio" name="gender" value="male" />Male
+      <input type="radio" name="gender" value="female" />Female
+      <input type="radio" name="gender" value="other" />Other <br /><br />
+    </div>
+    <div>
+      <label for="phone">Phone:</label>
+      <input type="text" value="+91" name="countrycode" size="2" />
+      <input
+        type="tel"
+        name="phone"
+        placeholder="1234-567890"
+        pattern="[0-9]{4} [0-9]{6}"
+        size="11"
+        required
+      />
+      <br /><br />
+      <label for="address"> Current Address:</label><br /><br />
+      <textarea
+        name="address"
+        id="address"
+        cols="30"
+        rows="10"
+        required
+      ></textarea>
+    </div>
+    <div>
+      <label for="resume">Drop Your Resume:</label>
+      <input type="file" />
+      <br /><br />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter Email"
+        required
+      />
+      <br /><br />
+      <label for="psw">Password:</label>
+      <input
+        type="password"
+        name="psw"
+        id="psw"
+        placeholder="Enter Password"
+        required
+      />
+      <br /><br />
+      <label for="re-pws">Re-type Password</label>
+      <input
+        type="password"
+        name="re-pws"
+        id="re-pws"
+        placeholder="Re-Type Password"
+        required
+      />
+      <br /><br />
+      <input type="button" value="Register" />
+    </div>
+  </body>
+</html>
